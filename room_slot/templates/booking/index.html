@@ -1,0 +1,243 @@
+{% extends 'base/base.html' %}
+{%load static %}
+{%block content%}
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+
+<div class="row" style="background-image: url('{% static 'image-6.jpg' %}'); background-size:cover;background-position:center;padding:2rem;">
+    <div class="center">
+        <h3 class="black-text" style="font-family: 'sans-serif'; margin: 4rem 0 4% 0; font-size: 4rem; color: white !important;">Looking for a Hall!</h3>
+        <h4 class="black-text" style="font-family: 'sans-serif'; margin: 0 0 4% 0; line-height: 25%; font-size: 2.5rem; color: white !important;">We have it ready for you...</h4>
+    </div>
+    
+    <div class="row">
+        <div id="wrapper1" class="col s5 offset-s1 input-field">
+            <input type="date" id="start1" class="datepicker-start" style="width: 50%; padding: 10px; font-size: 1rem; margin-left: 150px;" placeholder="Start date" />
+            <label for="start1" class="red-text text-lighten-2" style="font-size: 1.4rem; font-family: 'san-serif'; color: white;"></label>
+        </div>
+        <div id="wrapper2" class="col s5 input-field">
+            <input type="date" id="end1" class="datepicker-end" style="width: 50%; padding: 10px; font-size: 1rem; margin-left: 150px;" placeholder="End date" />
+            <label for="end1" class="red-text text-lighten-2" style="font-size: 1.4rem; font-family: 'san-serif'; color: white;"></label>
+        </div>
+    </div>
+    
+        <div class="center">
+            <a class="btn red darken-1" href="" style="padding: 25px; line-height: 3px; font-family: 'san-serif'; text-transform: capitalize; font-size: 0.9rem;" id="show_me_rooms">Show me Halls</a>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="row" style="margin-top: 3%;">
+    <div class="container">
+        <h3 class="center" style="font-family: 'sans-serif'; margin-bottom: 7%; margin-top: 5%;">Services at your Doorstep</h3>
+        <div class="row" style="justify-content: center; display: flex;">
+            <div class="col l2 m3 s4" style="display: flex; justify-content: center; margin: 0 5px;">
+                <div class="card-panel teal lighten-4" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="center">
+                        <i class="material-icons red-text small">local_airport</i><br>
+                        Pick and Drop
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m3 s4" style="display: flex; justify-content: center; margin: 0 5px;">
+                <div class="card-panel teal lighten-4" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="center">
+                        <i class="material-icons red-text small">free_breakfast</i><br>
+                        Free Breakfast
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m3 s4" style="display: flex; justify-content: center; margin: 0 5px;">
+                <div class="card-panel teal lighten-4" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="center">
+                        <i class="material-icons red-text small">wifi</i><br>
+                        Free High Speed WiFi
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m3 s4" style="display: flex; justify-content: center; margin: 0 5px;">
+                <div class="card-panel teal lighten-4" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="center">
+                        <i class="material-icons red-text small">live_tv</i><br>
+                        LED TV with Tata Sky
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="row">
+    <div class="container">
+        <h3 class="center" style="font-family: 'sans-serif'; margin-bottom: 7%; margin-top: 5%">Hall for Every Size & Need</h3>
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'image1.jpeg' %}" alt="" style="max-width: 80%; height: auto; margin: auto; display: block;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 1000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Concert Hall</span>
+                    <p>Experience exceptional acoustics and captivating performances.</p>
+                </div>
+            </div>
+            {% csrf_token %}
+        </div>
+        
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'image2.jpeg' %}" alt="" style="width: 100%; height: 240px;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 1700</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Carnegie Hall</span>
+                    <p>Step into a world of prestige and artistic excellence.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'image3.jpeg' %}" alt="" style="width: 100%; height: auto;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 1500</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Meeting Hall</span>
+                    <p>Facilitate collaboration and networking in a professional setting.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'image4.jpeg' %}" alt="" style="width: 80%; height: 240px;margin: auto; display: block;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 2500</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Wedding Hall</span>
+                    <p style="margin-top: -10px;">Celebrate love and joy in a beautifully decorated space.</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'pexels-pixabay-316080.jpg' %}" alt="" style="width: 100%; height: auto;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 2000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Party Hall</span>
+                    <p>Host memorable festivities and social gatherings with flair.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col l4 m6 s12">
+            <div class="card" style="height: 400px; transition: transform 0.3s; overflow: hidden;">
+                <div class="card-image" style="position: relative;">
+                    <img src="{% static 'image5.jpeg' %}" alt="" style="width: 100%; height: auto;">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size: 0.8rem">&#x20b9; 5000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">Discussion Hall</span>
+                    <p>Engage in insightful dialogues and thought-provoking debates.</p>
+                </div>
+            </div>
+        </div>        
+        </div>
+    </div>
+</div>
+
+<style>
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<script>
+// Accept datepicker-start or datepicker-end, as we need to initialize both anyway.
+$("input[class*='datepicker-']").pickadate({
+  selectMonths: false,
+  selectYears: 1,
+  format: 'dd/mmm/yyyy',
+  onSet: function(obj){
+    let thisPicker = $(this)[0].$node;
+
+    // Check if this is the start date
+    let classes = thisPicker.attr("class");
+    if (classes === undefined || classes.length === 0 || classes.indexOf("datepicker-start") < 0){
+      return;
+    }
+
+    // .datepicker-start must be wrapped in a div.input-field element (in this example), and
+    // .datepicker-end must be in the next div.input-field.  Change selectors for your conditions.
+    let parent1 = thisPicker.closest("div.input-field");    // This picker's parent
+    let parent2 = parent1.next("div.input-field");          // Next picker's parent
+    let picker2 = parent2.find(".datepicker-end");          // Matching 'end' picker
+    
+    // Set end picker minimum date, or whatever you need.
+    if(obj.select){
+      let dt = new Date(obj.select);
+      picker2.pickadate('picker').set('min', dt);
+    }
+    if(obj.hasOwnProperty('clear')){
+      picker2.pickadate('picker').set('min', false);
+    }
+  }
+});
+</script>
+<script>
+const room_btn=document.getElementById("show_me_rooms")
+room_btn.addEventListener("click",(e)=>
+{
+e.preventDefault()
+startDate=$('.datepicker-start').val();
+endDate=$('.datepicker-end').val();
+//d = new Date(endDate);    
+sd=new Date(startDate)
+td=new Date()
+if (sd<td || startDate.length==0 || endDate.length==0)
+{
+alert("Please choose a valid date")
+}
+else
+{
+     var form = document.createElement("form");
+    var element1 = document.createElement("input"); 
+    var element2 = document.createElement("input");  
+    var element3= document.createElement("input");  
+
+    form.method = "POST";
+    form.action = "/book";   
+    
+    element1.name="start_date";
+    element1.type="text"
+    element1.value=startDate;
+    form.appendChild(element1);  
+
+ element2.name="end_date";
+    element2.type="text"
+   element2.value=endDate;
+    form.appendChild(element2);  
+     element3.value='{{csrf_token}}';
+    element3.name="csrfmiddlewaretoken";
+    element3.type="hidden"
+    form.appendChild(element3);  
+    document.body.appendChild(form);
+   form.submit(); 
+}
+})
+</script>
+{% endblock %}
